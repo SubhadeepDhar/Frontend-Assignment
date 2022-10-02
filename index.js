@@ -75,19 +75,20 @@ export default List;
 // 1.Explain what the simple List component does.
 // Ans : The component consist of menu items which is basically responsible for rendering the items using map function.
 
+
 // 2.What problems / warnings are there with code?
-// ANS : (i)usestate is function which takes initial value as an argument and return the current state as first parameter
-//  and set method as 2nd parameter. but here we can see the code returns set method as a first parameter
-//  so the order is not maintained.
+// ANS : (i)usestate is function which takes initial value as an argument and return the current state as first parameterand set method as 2nd parameter.
+//But here we can see the code returns set method as a first parameter. So the order is not maintained.
  
-//  (ii)We should use arrow function to call event  handler rather directly calling event handler as it will automatically get executed
+//  (ii)We should use arrow function to call event  handler rather directly calling event handler as it will automatically get executed.
+
 //  (iii)propTypes.shapeOf() is an invalid syntax . We should use PropTypes.shape().
 
 
 // 3.Please fix, optimize, and/or modify the component as much as you think is necessary.
 // ANS: Whenever making lists of components in Javascript, users must use a special word attribute called "key". React uses keys to indicate whether
-//  additional burdens have been modified, removed, or altered. Or, to put it another way, designers may say that keywords
-//   are applied to identify the components in collections.We should use index as a key which provides a unique value to all items.
+// additional burdens have been modified, removed, or altered. Or, to put it another way, designers may say that keywords
+// are applied to identify the components in collections.We should use index as a key which provides a unique value to all items in a list.
 
 
 
